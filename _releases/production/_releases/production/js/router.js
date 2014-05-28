@@ -1,0 +1,2 @@
+/*! www.ktc.mx Backbone-require-layout 27-05-2014 */
+define(["jquery","underscore","backbone","views/SplashView"],function($,_,Backbone,SplashView){var Router=Backbone.Router.extend({routes:{"":"splashView"}}),initialize=function(){var Rutes=new Router;Rutes.on("route:splashView",function(){var View=new SplashView;View.render()}),Rutes.on("route:defaultAction",function(){}),Backbone.history.start()};return{initialize:initialize}});
