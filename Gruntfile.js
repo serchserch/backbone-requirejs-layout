@@ -5,8 +5,9 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
+
     jshint: {
-      files: ['Gruntfile.js', 'js/main.js'],
+      files: ['**/*.js', '!**node_modules/**', '!**js/libs/**', '!**_releases/**'],
       options: {
         globals: {
           jQuery: true,
@@ -22,7 +23,6 @@ module.exports = function(grunt) {
 
       prod:{
         options:{
-          banner: '/*! www.ktc.mx <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n',
           mangle: false,
           compress:{
             drop_console: true
@@ -32,17 +32,15 @@ module.exports = function(grunt) {
           {
             expand: true, 
             cwd: './',
-            src: ['**/*.js', '!**node_modules/**', '!**js/libs/**', '!**/Gruntfile.js'],
+            src: ['**/*.js', '!**node_modules/**', '!**js/libs/**', '!**/Gruntfile.js', '!**_releases/**'],
             dest: './_releases/production',
             ext: '.js'
           }
         ]
       },
 
-
       qa:{
         options:{
-          banner: '/*! www.ktc.mx <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n',
           mangle: false,
           beauty: true,
           compress:{
@@ -53,7 +51,7 @@ module.exports = function(grunt) {
           {
             expand: true, 
             cwd: './',
-            src: ['**/*.js', '!**node_modules/**', '!**js/libs/**', '!**/Gruntfile.js'],
+            src: ['**/*.js', '!**node_modules/**', '!**js/libs/**', '!**/Gruntfile.js', '!**_releases/**'],
             dest: './_releases/qa',
             ext: '.js'
           }
@@ -61,43 +59,72 @@ module.exports = function(grunt) {
       }
 
 
-
-
     },
 
 
-     htmlmin: {
-      dev: { 
-        options: { 
-          removeComments: true,
-          collapseWhitespace: true
-        },
-        files: {
-          'index.html': 'index.src.html'
-        }
-      },
-      prod: { 
-        options: { 
-          removeComments: true,
-          collapseWhitespace: true
-        },
-        files: {
-          'index.html': 'index.src.html'
+    connect: {
+      server: {
+        options: {
+          hostname: '0.0.0.0',
+          port: 9090,
+          base: './',
+          keepalive : true
         }
       }
     },
 
 
 
+     htmlmin: {
+
+      prod: { 
+        options: { 
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: [
+          {
+            expand: true,
+            cwd: './',
+            src: ['**/*.html', '!**node_modules/**', '**/templates/*.html', '!**_releases/**'],
+            dest: './_releases/prod',
+            ext: '.html'
+          }
+        ]
+      },
+
+      qa: { 
+        options: { 
+          removeComments: false,
+          collapseWhitespace: true
+        },
+        files: [
+          {
+            expand: true,
+            cwd: './',
+            src: ['**/*.html', '!**node_modules/**', '**/templates/*.html', '!**_releases/**'],
+            dest: './_releases/qa',
+            ext: '.html'
+          }
+        ]
+      }
+
+    },
+
+
+
   });
+
+
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('prod', ['uglify:prod']);
 
-  grunt.registerTask('qa', ['uglify:qa']);
+  grunt.registerTask('prod', ['uglify:prod', 'htmlmin:prod']);
+  grunt.registerTask('qa', ['uglify:qa', 'htmlmin:qa']);
 
 
 

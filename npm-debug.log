@@ -1,0 +1,147 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/sergio/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/tmp.tgz
+12 verbose folder .
+13 info prepublish Backbone-require-layout@0.0.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/sergio/.npm/1f1177db-tar.lock
+16 silly lockFile a0ae2d51-67369-0-7760851855855435-tmp-tgz tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/tmp.tgz
+17 verbose lock tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/tmp.tgz /Users/sergio/.npm/a0ae2d51-67369-0-7760851855855435-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile a0ae2d51-67369-0-7760851855855435-tmp-tgz tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/tmp.tgz
+21 silly lockFile a0ae2d51-67369-0-7760851855855435-tmp-tgz tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/tmp.tgz
+22 verbose tar unpack /var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/tmp.tgz
+23 silly lockFile 1455b40a-67369-0-7760851855855435-package tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/package
+24 verbose lock tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/package /Users/sergio/.npm/1455b40a-67369-0-7760851855855435-package.lock
+25 silly lockFile a0ae2d51-67369-0-7760851855855435-tmp-tgz tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/tmp.tgz
+26 verbose lock tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/tmp.tgz /Users/sergio/.npm/a0ae2d51-67369-0-7760851855855435-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm extractEntry Gruntfile.js
+31 silly gunzTarPerm extractEntry index.html
+32 silly gunzTarPerm extractEntry js/app.js
+33 silly gunzTarPerm extractEntry js/main.js
+34 silly gunzTarPerm extractEntry js/router.js
+35 silly gunzTarPerm extractEntry js/libs/backbone.js
+36 silly gunzTarPerm extractEntry js/libs/jquery.js
+37 silly gunzTarPerm extractEntry js/libs/require-text.js
+38 silly gunzTarPerm extractEntry js/libs/require.js
+39 silly gunzTarPerm extractEntry js/libs/underscore.js
+40 silly gunzTarPerm extractEntry js/views/SplashView.js
+41 silly gunzTarPerm extractEntry templates/SplashTemplate.html
+42 silly lockFile 1455b40a-67369-0-7760851855855435-package tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/package
+43 silly lockFile 1455b40a-67369-0-7760851855855435-package tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/package
+44 silly lockFile a0ae2d51-67369-0-7760851855855435-tmp-tgz tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/tmp.tgz
+45 silly lockFile a0ae2d51-67369-0-7760851855855435-tmp-tgz tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/tmp.tgz
+46 verbose tar pack [ '/Users/sergio/.npm/Backbone-require-layout/0.0.0/package.tgz',
+46 verbose tar pack   '/var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/package' ]
+47 verbose tarball /Users/sergio/.npm/Backbone-require-layout/0.0.0/package.tgz
+48 verbose folder /var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/package
+49 silly lockFile 1455b40a-67369-0-7760851855855435-package tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/package
+50 verbose lock tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/package /Users/sergio/.npm/1455b40a-67369-0-7760851855855435-package.lock
+51 silly lockFile 8549f2c3-require-layout-0-0-0-package-tgz tar:///Users/sergio/.npm/Backbone-require-layout/0.0.0/package.tgz
+52 verbose lock tar:///Users/sergio/.npm/Backbone-require-layout/0.0.0/package.tgz /Users/sergio/.npm/8549f2c3-require-layout-0-0-0-package-tgz.lock
+53 silly lockFile 1455b40a-67369-0-7760851855855435-package tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/package
+54 silly lockFile 1455b40a-67369-0-7760851855855435-package tar:///var/folders/12/z758_sd15nl_pg77xgmfq49h0000gp/T/npm-930-16cs3U13/1401320267369-0.7760851855855435/package
+55 silly lockFile 8549f2c3-require-layout-0-0-0-package-tgz tar:///Users/sergio/.npm/Backbone-require-layout/0.0.0/package.tgz
+56 silly lockFile 8549f2c3-require-layout-0-0-0-package-tgz tar:///Users/sergio/.npm/Backbone-require-layout/0.0.0/package.tgz
+57 silly lockFile a31cd824-one-require-layout-0-0-0-package /Users/sergio/.npm/Backbone-require-layout/0.0.0/package
+58 verbose lock /Users/sergio/.npm/Backbone-require-layout/0.0.0/package /Users/sergio/.npm/a31cd824-one-require-layout-0-0-0-package.lock
+59 silly lockFile a31cd824-one-require-layout-0-0-0-package /Users/sergio/.npm/Backbone-require-layout/0.0.0/package
+60 silly lockFile a31cd824-one-require-layout-0-0-0-package /Users/sergio/.npm/Backbone-require-layout/0.0.0/package
+61 verbose tar unpack /Users/sergio/.npm/Backbone-require-layout/0.0.0/package.tgz
+62 silly lockFile 33cc102a-one-require-layout-0-0-0-package tar:///Users/sergio/.npm/Backbone-require-layout/0.0.0/package
+63 verbose lock tar:///Users/sergio/.npm/Backbone-require-layout/0.0.0/package /Users/sergio/.npm/33cc102a-one-require-layout-0-0-0-package.lock
+64 silly lockFile 8549f2c3-require-layout-0-0-0-package-tgz tar:///Users/sergio/.npm/Backbone-require-layout/0.0.0/package.tgz
+65 verbose lock tar:///Users/sergio/.npm/Backbone-require-layout/0.0.0/package.tgz /Users/sergio/.npm/8549f2c3-require-layout-0-0-0-package-tgz.lock
+66 silly gunzTarPerm modes [ '755', '644' ]
+67 silly gunzTarPerm extractEntry package.json
+68 silly gunzTarPerm extractEntry .npmignore
+69 silly gunzTarPerm extractEntry Gruntfile.js
+70 silly gunzTarPerm extractEntry index.html
+71 silly gunzTarPerm extractEntry js/app.js
+72 silly gunzTarPerm extractEntry js/main.js
+73 silly gunzTarPerm extractEntry js/router.js
+74 silly gunzTarPerm extractEntry js/libs/backbone.js
+75 silly gunzTarPerm extractEntry js/libs/jquery.js
+76 silly gunzTarPerm extractEntry js/libs/require-text.js
+77 silly gunzTarPerm extractEntry js/libs/require.js
+78 silly gunzTarPerm extractEntry js/libs/underscore.js
+79 silly gunzTarPerm extractEntry js/views/SplashView.js
+80 silly gunzTarPerm extractEntry templates/SplashTemplate.html
+81 silly lockFile 33cc102a-one-require-layout-0-0-0-package tar:///Users/sergio/.npm/Backbone-require-layout/0.0.0/package
+82 silly lockFile 33cc102a-one-require-layout-0-0-0-package tar:///Users/sergio/.npm/Backbone-require-layout/0.0.0/package
+83 silly lockFile 8549f2c3-require-layout-0-0-0-package-tgz tar:///Users/sergio/.npm/Backbone-require-layout/0.0.0/package.tgz
+84 silly lockFile 8549f2c3-require-layout-0-0-0-package-tgz tar:///Users/sergio/.npm/Backbone-require-layout/0.0.0/package.tgz
+85 verbose chmod /Users/sergio/.npm/Backbone-require-layout/0.0.0/package.tgz 644
+86 verbose chown /Users/sergio/.npm/Backbone-require-layout/0.0.0/package.tgz [ 502, 20 ]
+87 silly lockFile 3a52ce78- .
+88 silly lockFile 3a52ce78- .
+89 silly publish { name: 'Backbone-require-layout',
+89 silly publish   version: '0.0.0',
+89 silly publish   description: 'Backbone layout with grutn task',
+89 silly publish   main: 'index.js',
+89 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+89 silly publish   keywords: [ 'backbone', 'requirejs', 'layout' ],
+89 silly publish   author: { name: 'serchserch' },
+89 silly publish   license: 'MIT',
+89 silly publish   devDependencies:
+89 silly publish    { grunt: '^0.4.5',
+89 silly publish      'grunt-contrib-uglify': '^0.4.0',
+89 silly publish      'grunt-contrib-connect': '^0.7.1',
+89 silly publish      'grunt-contrib-jshint': '^0.10.0',
+89 silly publish      'grunt-contrib-htmlmin': '^0.3.0' },
+89 silly publish   dependencies: { 'grunt-contrib-connect': '^0.7.1' },
+89 silly publish   readme: 'ERROR: No README data found!',
+89 silly publish   _id: 'Backbone-require-layout@0.0.0',
+89 silly publish   dist: { shasum: '6ed2343adcf99d3447666ba7d654a85b1436457d' },
+89 silly publish   _from: '.' }
+90 verbose url raw Backbone-require-layout
+91 verbose url resolving [ 'https://registry.npmjs.org/', './Backbone-require-layout' ]
+92 verbose url resolved https://registry.npmjs.org/Backbone-require-layout
+93 info trying registry request attempt 1 at 18:37:47
+94 http PUT https://registry.npmjs.org/Backbone-require-layout
+95 http 403 https://registry.npmjs.org/Backbone-require-layout
+96 error publish Failed PUT 403
+97 error Error: forbidden New packages must have all-lowercase names: Backbone-require-layout
+97 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:237:14)
+97 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+97 error     at Request.EventEmitter.emit (events.js:98:17)
+97 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+97 error     at Request.EventEmitter.emit (events.js:117:20)
+97 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+97 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+97 error     at _stream_readable.js:920:16
+97 error     at process._tickCallback (node.js:415:13)
+98 error If you need help, you may report this *entire* log,
+98 error including the npm and node versions, at:
+98 error     <http://github.com/npm/npm/issues>
+99 error System Darwin 13.0.0
+100 error command "node" "/usr/local/bin/npm" "publish"
+101 error cwd /Users/sergio/Projects/Node/backbone-requirejs-layout
+102 error node -v v0.10.26
+103 error npm -v 1.4.3
+104 verbose exit [ 1, true ]
